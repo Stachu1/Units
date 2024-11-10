@@ -61,6 +61,11 @@ unit_map = {
     "Pa": SIExpression(1, -1, -2),  # Pascal: kg*m^-1*s^-2
     "lx": SIExpression(0, -2, 0, 0, 0, 0, 1),  # Lux: m^-2*cd
     "S": SIExpression(-1, -2, 3, 2),  # Siemens: kg^-1*m^-2*s^3*A^2
+    "Gy": SIExpression(0, 2, -2),  # Gray: J*kg^-1
+    "Sv": SIExpression(0, 2, -2),  # Sievert: J*kg^-1
+    "kat": SIExpression(0, 0, -1, 0, 0, 1),  # Katal: mol*s^-1
+    "lm": SIExpression(0, 0, 0, 0, 0, 0, 1),  # Lumen: cd*sr (simplified as cd)
+    "sr": SIExpression(),  # Steradian: dimensionless
     "m": SIExpression(0, 1),  # meter
     "s": SIExpression(0, 0, 1),  # second
     "kg": SIExpression(1),  # kilogram
