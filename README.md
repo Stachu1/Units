@@ -33,7 +33,6 @@ Gy - Gray
 Sv - Sievert
 kat - Katal
 lm - Lumen
-sr - Steradian
 m - Meter
 s - Second
 kg - Kilogram
