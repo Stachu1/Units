@@ -93,18 +93,19 @@ def parse_and_convert(expression):
                     -unit_si_expression.A, -unit_si_expression.K, -unit_si_expression.mol, -unit_si_expression.cd
                 ))
         else:
-            print(f"Warning: Unit '{unit_name}' not found in the mapping.")
+            print(f"Error: Unit '{unit_name}' not found in the mapping")
+            return;
 
     # Print the result as a combined SI expression
     si_str = str(result_expression)
     match_found = False
     for key, value in unit_map.items():
         if result_expression == value:
-            print(f"SI conversion of '{expression}': {si_str} = {key}")
+            print(f"{expression} = {si_str} = {key}")
             match_found = True
             break
     if not match_found:
-        print(f"SI conversion of '{expression}': {si_str}")
+        print(f"{expression} = {si_str}")
 
 # Take input from command line arguments
 if len(sys.argv) > 1:
