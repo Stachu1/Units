@@ -65,7 +65,6 @@ unit_map = {
     "Sv": SIExpression(0, 2, -2),  # Sievert: J*kg^-1
     "kat": SIExpression(0, 0, -1, 0, 0, 1),  # Katal: mol*s^-1
     "lm": SIExpression(0, 0, 0, 0, 0, 0, 1),  # Lumen: cd*sr (simplified as cd)
-    "sr": SIExpression(),  # Steradian: dimensionless
     "m": SIExpression(0, 1),  # meter
     "s": SIExpression(0, 0, 1),  # second
     "kg": SIExpression(1),  # kilogram
